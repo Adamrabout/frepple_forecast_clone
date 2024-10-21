@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Database connection
-engine = create_engine('postgresql://username:password@localhost/frepple_forecast_db')
+engine = create_engine('sqlite:///frepple_forecast.db')
 Session = sessionmaker(bind=engine)
 session = Session()
 
