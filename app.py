@@ -15,6 +15,7 @@ session = Session()
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # Define layout
 app.layout = html.Div([
